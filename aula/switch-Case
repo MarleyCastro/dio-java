@@ -1,0 +1,22 @@
+package Switchcase;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        var Scanner = new Scanner(System.in);
+        System.out.println("Informe um número de 1 a 7");
+        var option = Scanner.nextInt();
+        var mensage = switch (option){
+            case 1 -> "Domingo";
+            case 2 -> "Segunda";
+            case 3 -> "Terça";
+            case 4 -> "Quarta";
+            case 5 -> "Quinta";
+            case 6 -> "Sexta";
+            case 7 -> "Sabado";
+            default -> "Opção invalida";
+        };
+        System.out.println(mensage);
+    }
+}
